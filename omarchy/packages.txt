@@ -1,0 +1,5 @@
+# Packages rebuild.sh installs with pacman on Omarchy machines (--needed, so
+# already-installed ones are skipped). Install-only: deleting a line does not
+# uninstall the package. One package per line; # starts a comment.
+helium-browser-bin  # browser (Omarchy's own repo)
+mullvad-vpn         # VPN app + daemon (extra); service in services.txt

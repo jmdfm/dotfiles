@@ -1,0 +1,13 @@
+.DS_Store
+result
+result-*
+
+# Never commit keys or machine-local files (check.sh also refuses them).
+id_*
+*.pem
+*.key
+*.p12
+allowed_signers
+*.local
+deny.txt
+/machine.nix

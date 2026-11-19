@@ -1,0 +1,24 @@
+# Global mise config, linked from ~/.dotfiles (modules/home/mise.nix).
+# `mise use -g <tool>` edits this file in place.
+
+[settings]
+# Don't hit the network to look up lazy tools when a command isn't found
+not_found_auto_install = false
+# Opt out of Omarchy's lazy-installed tools (keep claude and gh)
+disable_tools = [
+  "amp", "antigravity-cli", "basecamp", "codex", "copilot", "crush", "cursor-agent",
+  "ghui", "grok", "hey-cli", "http:devin", "http:kiro-cli", "hunk", "muse",
+  "npm:@deepseek-ai/dsh", "npm:@kilocode/cli", "npm:@minimax-ai/code",
+  "npm:@moonshot-ai/kimi-code", "npm:cf", "npm:command-code", "npm:freebuff",
+  "oh-my-pi", "opencode", "ori", "pi", "playwright", "qwen",
+]
+
+[tools]
+bun = "latest"
+cargo-nextest = "latest"
+go = "latest"
+node = "lts"
+pnpm = "10.33.0"
+rust = "1.93"
+uv = "latest"
+zig = "latest"
